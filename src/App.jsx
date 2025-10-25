@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react'
 import './App.css'
 import {Navbar} from './components/Navbar'
 import {Hero} from './components/hero'
-import Contact from './components/Contact'
+import {Contact} from './components/Contact'
 import {Projects} from './components/Projects'
+import emailjs from "@emailjs/browser"
+import { motion } from 'framer-motion'
 
 
 function App() {
@@ -11,6 +13,7 @@ function App() {
 
   useEffect(()=>{
     setIsLoaded(true)
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
   },[])
   return (
 
@@ -19,9 +22,15 @@ function App() {
       <Hero/>
       <Projects/>
       <Contact/>
-      <>
-      <p>&copy; 2025 Adil. All rights reserved</p>
-      </>
+      <motion.footer
+        className="footer"
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
+        <p> &copy; 2025 PedroTech. All rights reserved.</p>
+      </motion.footer>
     </div>
   )
 }
