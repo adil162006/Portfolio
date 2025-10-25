@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
 import {Navbar} from './components/Navbar'
-import {Hero} from './components/hero'
+import {Hero} from './components/Hero'
 import {Contact} from './components/Contact'
 import {Projects} from './components/Projects'
 import emailjs from "@emailjs/browser"
