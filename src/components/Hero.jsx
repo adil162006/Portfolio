@@ -48,11 +48,11 @@ export const Hero = () => {
           </motion.h1>
 
           <motion.h2 className="hero-subtitle" variants={fadeInUp}>
-            Crafting seamless web experiences as a MERN Stack Developer, while teaching machines to think as a Machine Learning Engineer
+            Crafting seamless web experiences as a MERN Stack Developer Leveraging LLM-powered agents to build intelligent applications that can reason, act, and interact autonomously.
           </motion.h2>
 
           <motion.p className="hero-description" variants={fadeInUp}>
-            I craft beautiful digital experiences that combine stunning design with powerful functionality. Specializing in modern web applications and interactive user interfaces.
+            I design and develop robust backend systems that power scalable and efficient applications. I also build intelligent solutions using LLM-powered agents, enabling autonomous reasoning, task automation, and smart workflows
           </motion.p>
 
           <motion.div className="cta-buttons" variants={staggerContainer}>
