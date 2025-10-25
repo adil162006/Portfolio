@@ -110,7 +110,8 @@ export const Hero = () => {
     "DSA strategist — loves solving algorithmic puzzles",
     "API architect — writes endpoints that scale effortlessly",
     "balances frontend and backend, but thrives in backend complexity",
-    "integrates ML sensibly — only where it improves systems"
+    "I build agentic AI systems—intelligent agents that can plan, reason, 
+    and act autonomously to solve complex problems and improve workflows."
   ],
   missionStatement: "Crafting fullstack applications with robust backends, 
                       optimized data flows, and 
