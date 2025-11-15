@@ -106,6 +106,7 @@ export const Contact = () => {
             type="text"
             name="name"
             placeholder="Your Name..."
+            value={formData.name}
             required
             whileFocus={{ scale: 1.02 }}
             onChange={handleInputChange}
@@ -114,6 +115,7 @@ export const Contact = () => {
             type="email"
             name="email"
             placeholder="Your Email..."
+            value={formData.email}
             required
             whileFocus={{ scale: 1.02 }}
             onChange={handleInputChange}
@@ -121,6 +123,7 @@ export const Contact = () => {
           <motion.textarea
             name="message"
             placeholder="Your Message..."
+            value={formData.message}
             required
             whileFocus={{ scale: 1.02 }}
             onChange={handleInputChange}
@@ -141,6 +144,8 @@ export const Contact = () => {
               className={`form-status ${
                 formStatus.success ? "success" : "error"
               } `}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
             >
               {formStatus.message}
             </motion.div>

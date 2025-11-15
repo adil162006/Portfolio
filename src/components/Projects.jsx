@@ -131,6 +131,69 @@ export const Projects = () => {
             </div>
           </motion.div>
         </a>
+        {/* Nasa Api */}
+        <a
+          href="https://github.com/adil162006/celestial-space-visualizer"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none", color: "inherit", display: "block" }}
+        >
+          <motion.div
+            className="project-card"
+            variants={fadeInUp}
+            whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          >
+            <motion.div
+              className="project-image"
+              style={{ backgroundImage: "url('/projects/spaceapi.png')" }}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.2 }}
+            />
+            <h3>Celestial — NASA Space Exploration</h3>
+            <p>
+             Celestial is an educational and interactive space-themed web application that brings NASA’s 
+             open data to your fingertips. Explore high-resolution space imagery, discover new planets, 
+             and track the International Space Station — all in one immersive dashboard.
+            </p>
+            <div className="project-tech">
+              <span>EJS</span>
+              <span>Node.js</span>
+              <span>Nasa APIs</span>
+              <span>Mapbox Api</span>
+            </div>
+          </motion.div>
+        </a>
+        {/* Pokedex */}
+        <a
+          href="https://github.com/adil162006/Pokedex"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none", color: "inherit", display: "block" }}
+        >
+          <motion.div
+            className="project-card"
+            variants={fadeInUp}
+            whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          >
+            <motion.div
+              className="project-image"
+              style={{ backgroundImage: "url('/projects/pokeball.png')" }}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.2 }}
+            />
+            <h3>Pokedex</h3>
+            <p>
+              A Pokedex application built with React, providing a clean and interactive interface to explore Pokémon data from the Pokémon API.
+              Features include viewing Pokémon images, stats, types, and basic search functionality.
+              The project focuses on frontend functionality, offering a responsive design, smooth navigation, and an intuitive user experience.
+            </p>
+            <div className="project-tech">
+              <span>React</span>
+              <span>Pokemon API</span>
+              <span>Tailwind css</span>
+            </div>
+          </motion.div>
+        </a>
 
       </motion.div>
     </motion.section>
