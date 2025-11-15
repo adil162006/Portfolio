@@ -70,9 +70,10 @@ export const Projects = () => {
           </motion.div>
         </a>
 
-        {/* Inventory Management */}
+        
+        {/* Expense Tracker */}
         <a
-          href="https://github.com/adil162006/Inventory-management"
+          href="https://github.com/adil162006/expense-tracker-react-native-app"
           target="_blank"
           rel="noopener noreferrer"
           style={{ textDecoration: "none", color: "inherit", display: "block" }}
@@ -84,19 +85,22 @@ export const Projects = () => {
           >
             <motion.div
               className="project-image"
-              style={{ backgroundImage: "url('/projects/Inventory.png')" }}
+              style={{ backgroundImage: "url('/projects/expensetracker.png')" }}
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.2 }}
             />
-            <h3>Inventory Management with Dashboard</h3>
+            <h3>Expense Tracker App</h3>
             <p>
-              A lightweight inventory management web app built with Next.js, TypeScript, and Prisma, offering seamless product tracking and management.
-              Includes CRUD operations, dashboard analytics with charts, pagination, and a seeded demo dataset for instant exploration.
+              Lightweight expense tracker with a React Native (Expo) front-end and Express backend using PostgreSQL (Neon) and optional Upstash rate-limiting.
+              Mobile app uses Clerk for authentication and interacts with backend REST endpoints for transactions and summaries.
+              Supports local development and deployment on Node hosts; Expo handles mobile builds for Android, iOS, or real devices.
             </p>
             <div className="project-tech">
-              <span>Next.js</span>
-              <span>Prisma</span>
+              <span>React Native</span>
               <span>Neon</span>
+              <span>Clerk</span>
+              <span>Expo</span>
+              <span>Node js</span>
             </div>
           </motion.div>
         </a>
@@ -128,6 +132,36 @@ export const Projects = () => {
               <span>React</span>
               <span>Node.js</span>
               <span>MongoDb</span>
+            </div>
+          </motion.div>
+        </a>
+        {/* Inventory Management */}
+        <a
+          href="https://github.com/adil162006/Inventory-management"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none", color: "inherit", display: "block" }}
+        >
+          <motion.div
+            className="project-card"
+            variants={fadeInUp}
+            whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          >
+            <motion.div
+              className="project-image"
+              style={{ backgroundImage: "url('/projects/Inventory.png')" }}
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.2 }}
+            />
+            <h3>Inventory Management with Dashboard</h3>
+            <p>
+              A lightweight inventory management web app built with Next.js, TypeScript, and Prisma, offering seamless product tracking and management.
+              Includes CRUD operations, dashboard analytics with charts, pagination, and a seeded demo dataset for instant exploration.
+            </p>
+            <div className="project-tech">
+              <span>Next.js</span>
+              <span>Prisma</span>
+              <span>Neon</span>
             </div>
           </motion.div>
         </a>
