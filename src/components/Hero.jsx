@@ -48,7 +48,7 @@ export const Hero = () => {
           </motion.h1>
 
           <motion.h2 className="hero-subtitle" variants={fadeInUp}>
-            Crafting seamless web experiences as a MERN Stack Developer Leveraging LLM-powered agents to build intelligent applications that can reason, act, and interact autonomously.
+           Crafting seamless web experiences as a MERN Stack Developer, building real-time collaborative applications and scalable backend systems with Node.js, MongoDB, and modern frontend frameworks
           </motion.h2>
 
           <motion.p className="hero-description" variants={fadeInUp}>
