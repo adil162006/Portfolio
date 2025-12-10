@@ -41,6 +41,41 @@ export const Projects = () => {
         viewport={{ once: true }}
       >
 
+        {/* Interview Platform*/}
+        <a
+          href="https://github.com/adil162006/Interview-Platform"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none", color: "inherit", display: "block" }}
+        >
+          <motion.div
+            className="project-card"
+            variants={fadeInUp}
+            whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          >
+            <motion.div
+              className="project-image"
+              style={{ backgroundImage: "url('/projects/hero.png')" }}
+              whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+            />
+            <h3>Remote Interview Platform</h3>
+            <p>
+             A real-time collaborative interview platform built with Stream.io, Clerk, and MongoDB. It enables users to practice technical interviews through live video calls, shared code editing, and instant messaging. Featuring multi-language code execution, problem-based session creation, and automated user syncing via Inngest. Designed to help developers collaborate, learn, and simulate real interview environments seamlessly             
+            </p>
+            <div className="project-tech">
+              <span>React.js</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>MongoDB</span>
+              <span>Clerk Auth</span>
+              <span>Stream.io (Video & Chat)</span>
+              <span>Monaco Editor</span>
+              <span>Piston API</span>
+              <span>Inngest</span>
+              <span>Tailwind CSS</span>
+            </div>
+          </motion.div>
+        </a>
         {/* AI Code Reviewer */}
         <a
           href="https://github.com/adil162006/ai-code-reviewer"
