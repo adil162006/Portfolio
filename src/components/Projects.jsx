@@ -41,6 +41,43 @@ export const Projects = () => {
         viewport={{ once: true }}
       >
 
+        {/* ecommerce */}
+        <a
+          href="https://github.com/adil162006/ecommerce-reactnative"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none", color: "inherit", display: "block" }}
+        >
+          <motion.div
+            className="project-card"
+            variants={fadeInUp}
+            whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          >
+            <motion.div
+              className="project-image"
+              style={{ backgroundImage: "url('/projects/ecomerce.png')" }}
+              whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+            />
+            <h3>React Native Ecommerce App</h3>
+            <p>
+             A full-stack E-Commerce platform featuring a React Native mobile app, admin dashboard, and secure REST API. It supports end-to-end shopping flows with Stripe payments, role-based admin controls, live analytics, and background jobs. Built for scalability with modern tooling, monitoring, and a clean GitHub workflow.             
+            </p>
+            <div className="project-tech">
+              <span>React Native (Expo)</span>
+              <span>React.js (Admin Dashboard)</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>MongoDB</span>
+              <span>Clerk Auth</span>
+              <span>Stripe Payments</span>
+              <span>TanStack Query</span>
+              <span>Inngest (Background Jobs)</span>
+              <span>Tailwind CSS</span>
+              <span>Sentry</span>
+              <span>Render (Deployment)</span>
+            </div>
+          </motion.div>
+        </a>
         {/* Interview Platform*/}
         <a
           href="https://github.com/adil162006/Interview-Platform"
@@ -55,7 +92,7 @@ export const Projects = () => {
           >
             <motion.div
               className="project-image"
-              style={{ backgroundImage: "url('/projects/hero.png')" }}
+              style={{ backgroundImage: "url('/projects/Interview.png')" }}
               whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
             />
             <h3>Remote Interview Platform</h3>
@@ -73,6 +110,41 @@ export const Projects = () => {
               <span>Piston API</span>
               <span>Inngest</span>
               <span>Tailwind CSS</span>
+            </div>
+          </motion.div>
+        </a>
+        {/* AI DENTAL ASSISTANT */}
+        <a
+          href="https://github.com/adil162006/Ai-Dental_Appointment-SAAS"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none", color: "inherit", display: "block" }}
+        >
+          <motion.div
+            className="project-card"
+            variants={fadeInUp}
+            whileHover={{ y: -10, transition: { duration: 0.2 } }}
+          >
+            <motion.div
+              className="project-image"
+              style={{ backgroundImage: "url('/projects/dentiwise.png')" }}
+              whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
+            />
+            <h3>AI Dental Assistant</h3>
+            <p>
+             Dentwise is a modern dental appointment platform built with Next.js, Clerk, PostgreSQL, and Tailwind, featuring secure authentication, a 3-step booking flow, admin dashboard, and automated email notifications. It includes subscription-based access with smart upgrades, invoices, and an AI voice agent powered by Vapi for paid users. Designed for scalability with real-time data fetching, clean GitHub workflows, and free-tier friendly deployment.
+            </p>
+            <div className="project-tech">
+              <span>Next.js</span>
+              <span>TypeScript</span>
+              <span>Clerk Auth & Billing</span>
+              <span>PostgreSQL</span>
+              <span>Vapi (AI Voice Agent)</span>
+              <span>Resend (Emails)</span>
+              <span>TanStack Query</span>
+              <span>Tailwind CSS</span>
+              <span>Shadcn UI</span>
+
             </div>
           </motion.div>
         </a>
